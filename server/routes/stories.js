@@ -1,9 +1,7 @@
 import { Router } from "express";
-
+import { getStories } from "../controllers/stories.js";
 const router = Router();
 
-router.get("/", (req, res) => {
-res.send("Community Compass")
-})
+router.get("/", getStories)
 
 export default router;
