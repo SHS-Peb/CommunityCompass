@@ -17,7 +17,7 @@ const Home = () => {
 
     return (
         <Layout>
-            <Sider style={style.sider} width ={200}>
+            <Sider style={style.sider} width ={420}>
             <StoryForm/>
             </Sider>
             <Content style={style.content} >

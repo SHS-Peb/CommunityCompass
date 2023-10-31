@@ -1,6 +1,6 @@
-import { Row } from 'antd'
-import React from 'react'
-import Story from '../story'
+import { Row } from 'antd';
+import React from 'react';
+import Story from '../story';
 import { useSelector } from "react-redux";
 
 const StoryList = () => {
