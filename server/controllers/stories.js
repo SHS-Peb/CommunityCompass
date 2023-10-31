@@ -13,10 +13,13 @@ const getStories = async (req, res) => {
 
 const createStory = async (req, res) => {
     const body = req.body;
-    const newStory = new Story({
-
-    });
-
+    const newStory = new Story();
+console.log(body)
+newStory.caption = body.caption;
+newStory.username = body.username;
+newStory.userId = body.username;
+newStory.image = body.image;
+newStory.tags = body.tags ? body.tags : ""
     try {
         await newStory.save();
         res.status(201).json(newStory);
@@ -26,4 +29,4 @@ const createStory = async (req, res) => {
 }
 
 
-export { getStories, createStory }
+export { getStories, createStory,  }
